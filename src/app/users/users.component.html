@@ -1,5 +1,7 @@
 <h1>Users list </h1>
 
-  <div *ngFor="let user of users | async; trackBy: trackByIdFunction">
+<div class="fluid">
+  <div *ngFor="let user of users | async; trackBy: trackByIdFunction" class="user-card user-card-border content-centering">
     {{ user.name }}
   </div>
+</div>
