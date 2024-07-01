@@ -11,7 +11,6 @@ import {UsersService} from "./users.service";
     AsyncPipe
   ],
   templateUrl: './users.component.html',
-  styleUrl: './users.component.scss'
 })
 export class UsersComponent {
   users = inject(UsersService).getUsers();
