@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, inject, Injectable} from '@angular/core';
 import {AsyncPipe, NgForOf} from "@angular/common";
 import {of} from "rxjs";
+import {UsersService} from "./users.service";
 
 @Component({
   selector: 'app-users',
@@ -13,8 +14,5 @@ import {of} from "rxjs";
   styleUrl: './users.component.scss'
 })
 export class UsersComponent {
-  users = of([{
-    name: 'John'
-  }]);
-
+  users = inject(UsersService).getUsers();
 }
