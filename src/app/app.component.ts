@@ -1,6 +1,5 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {findPassingCardFromEastToWest, solutionDispensser2} from "./qa-interviews";
 
 @Component({
   selector: 'app-root',
@@ -12,6 +11,4 @@ import {findPassingCardFromEastToWest, solutionDispensser2} from "./qa-interview
 })
 export class AppComponent {
   title = 'users-list-app';
-  protected readonly findPassingCardFromEastToWest = findPassingCardFromEastToWest;
-  protected readonly solutionDispensser2 = solutionDispensser2;
 }
