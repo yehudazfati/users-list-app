@@ -1,4 +1,4 @@
-<h1>Users list</h1>
+<h1>Users cards list</h1>
 
 <div class="fluid" *ngIf="users | async as users; else loadderTemplate">
   <user-card *ngFor="let user of users; trackBy: trackByIdFunction" [user]="user"></user-card>
