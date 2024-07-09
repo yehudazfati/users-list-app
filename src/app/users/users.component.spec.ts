@@ -22,31 +22,13 @@ describe('UsersComponent', () => {
 
     it('should render users list with one user', () => {
         component.users = of([{
-            id: 1,
-            name: 'John Doe',
-            username: 'johndoe',
-            email: 'johndo@example.com',
-            address: {
-                street: '',
-                suite: '',
-                city: '',
-                zipcode: '',
-                geo: {lat: '', lng: ''}
-            },
-            phone: '1234567890',
-            website: 'www.johndoe.com',
-            company: {
-                name: '',
-                catchPhrase: '',
-                bs: ''
-            }
+            name: 'Test User',
         }]);
 
         fixture.detectChanges();
 
         const compiled = fixture.debugElement.nativeElement;
-        expect(compiled.querySelector('div.user-card').textContent).toContain('Test User');
-
+        expect(compiled.querySelector('li').textContent).toContain('Test User');
     });
 
 });
