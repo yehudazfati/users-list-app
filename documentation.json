@@ -380,7 +380,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-52cdec0bcde1ed91758377725c9faba341efb39c62b4e49fc5f68b56af253965009dbaa9da4cbd7a8140466f0dff2f3abb5706755497e199a596c1c9ea8298bb",
+            "id": "component-AppComponent-5ec1274fba07c880286895f08af9f6663f6c065a9e39734dcb038504fffa086d521dfdb3f4225c4474e7b51bbb2e8e0470d3f181ffdf4cce0dc4cf9978600472",
             "file": "src/app/app.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -400,34 +400,6 @@
             "outputsClass": [],
             "propertiesClass": [
                 {
-                    "name": "findPassingCardFromEastToWest",
-                    "defaultValue": "findPassingCardFromEastToWest",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 15,
-                    "modifierKind": [
-                        124,
-                        148
-                    ]
-                },
-                {
-                    "name": "solutionDispensser2",
-                    "defaultValue": "solutionDispensser2",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 16,
-                    "modifierKind": [
-                        124,
-                        148
-                    ]
-                },
-                {
                     "name": "title",
                     "defaultValue": "'users-list-app'",
                     "deprecated": false,
@@ -435,7 +407,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 14
+                    "line": 13
                 }
             ],
             "methodsClass": [],
@@ -452,7 +424,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {ChangeDetectionStrategy, Component} from '@angular/core';\r\nimport {RouterOutlet} from '@angular/router';\r\nimport {findPassingCardFromEastToWest, solutionDispensser2} from \"./qa-interviews\";\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  standalone: true,\r\n  imports: [RouterOutlet],\r\n  templateUrl: './app.component.html',\r\n  styleUrl: './app.component.scss',\r\n  changeDetection: ChangeDetectionStrategy.OnPush\r\n})\r\nexport class AppComponent {\r\n  title = 'users-list-app';\r\n  protected readonly findPassingCardFromEastToWest = findPassingCardFromEastToWest;\r\n  protected readonly solutionDispensser2 = solutionDispensser2;\r\n}\r\n",
+            "sourceCode": "import {ChangeDetectionStrategy, Component} from '@angular/core';\r\nimport {RouterOutlet} from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  standalone: true,\r\n  imports: [RouterOutlet],\r\n  templateUrl: './app.component.html',\r\n  styleUrl: './app.component.scss',\r\n  changeDetection: ChangeDetectionStrategy.OnPush\r\n})\r\nexport class AppComponent {\r\n  title = 'users-list-app';\r\n}\r\n",
             "styleUrl": "./app.component.scss",
             "assetsDirs": [],
             "styleUrlsData": "",
@@ -1071,7 +1043,7 @@
                 "linktype": "component",
                 "name": "AppComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/4",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
